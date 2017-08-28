@@ -1,6 +1,6 @@
 def Cornell_Choices_Alpha():
+  #In terms of data flow, this program is a mess to read and understand. I was just testing how I would go along asking users to input choices.
   print "This Cornell-meme related program is brought to you by Atsu Kludze, member of Sleep is Not Due Tommorrow"
-  #Add college names later. 
   letters_for_school=["a","b","c","d","e","f","g"]
   colleges = ["College of Agriculture and Life Sciences","College of Architecture, Art and Planning"
                   "College of Arts and Sciences","Cornell SC Johnson College of Business","College of Engineering",
