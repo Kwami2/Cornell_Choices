@@ -1,7 +1,9 @@
-def Exposition():
+def exposition():
   #This print statement is meant to just give some instruction and background to the game.
   print "This Cornell-meme related program is brought to you by Atsu Kludze, member of Sleep is Not Due Tommorrow \n"
-  print "Welcome to Cornell Choices, this game is a choose your own adventue, based on the freshman college experience. \n each chapter has a correcct choices, where not picking it will resut in game over. Have fun!"
+  print "Welcome to Cornell Choices, this game is a choose your own adventure, based on the my college freshman college experience as an engineering student. \nEach chapter has a correcct choices, where not picking it will resut in game over.\n"
+  print "Exposition:\nYou are apart of the Cornell's Class of 2021, the most select and diverse class Cornell has ever had (until next year).\nYou don't know who at the engieering admission office messed up, but you are graeftul they did."
+  print "Despite that fact, you are trying to prove to yourself that you belong here. The choices you make here will determine the next 4 years.\nGood Luck.\n"
   #Lists that carry the letter and respective college name for what school you are apart of.
   letters_for_school=["a","b","c","d","e","f","g"]
   colleges = ["College of Agriculture and Life Sciences","College of Architecture, Art and Planning"
@@ -16,11 +18,13 @@ def Exposition():
       print letters_for_school[i] +"."+colleges[i] + "\n"
     school= raw_input("What is your school? Please select from one of the choices.\n")
     school=school.lower()
-    
     for i in range(len(colleges)):
       if school==letters_for_school[i]:
-        college_name=colleges[letters_for_school.index(school)]
-        print ("Welcome to Cornell %s! from %s") %(name,college_name)
         bailout=0
-        return name
-Exposition()
+#The user should answer that he is from the college of engineering. If he/she does not, then it should print a trying to be funny alternate statement.
+    if school==letters_for_school[3]:
+      college_name=colleges[3]
+      print ("Welcome to Cornell %s from %s!\nGet ready for 4 years of choices. Cornell Choices.") %(name,college_name)
+    else:
+      print "Oh God, you don't even know what college you are a part of...\nThis is going to be the start of a very long 4 years..."
+  return name 
