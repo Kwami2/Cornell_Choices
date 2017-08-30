@@ -8,7 +8,7 @@ def Part_2():
   space_maker()
 
   print "After your decision to not give up, you encounter something every engineer has to deal with during the freshman year: Not knowing how to do something \n"
-  print "In Chem, you understand the basics, but do not fully understand the application of a certain concept\nYou know that you have to learn it soon, as the Professor said that it will defintely be on the prelim.\n"
+  print "In Chem, you understand the basics, but do not fully understand the application of a certain concept.\nYou know that you have to learn it soon, as the Professor said that it will defintely be on the prelim.\n"
   print ("You have three choices: \n")
 #This while loop keeps asking the user to select from a list of choices. The loop won't break until the user does.
   bailout=1

@@ -24,7 +24,6 @@ def Part_1():
     for i in range(len(letters_for_choices)):
       if user_answer==letters_for_choices[i]:
         bailout=0
-        
 #This is simply a way to print "You chose: [insert choice here] and the respective comment.
   for i in range(3):
     if user_answer==letters_for_choices[i]:
@@ -36,5 +35,5 @@ def Part_1():
     print "\n"
     game_over()
     
-  #I want to return this string, so I could possible use it later, and won't have to ask them again. 
+#I want to return this string, so I could possible use it later, and won't have to ask them again. 
   return dorm 

@@ -1,4 +1,4 @@
-#Made by Saleh Hassen.
+#Made by Saleh Hassen
 def soapBox(printThis):
     print printThis
 
@@ -8,13 +8,26 @@ military = lambda y: soapBox("You went to serve your country, write the rest lat
 
 world = lambda z: soapBox("You decided to see the world, write the rest later")
 
+class Health(object):
+    def __init__(self, maxHealth, currentHealth, status):
+        self.maxHealth = maxHealth
+        self.currentHealth = currentHealth
+        self.status = status
+
 class User(object):
     #Write this to keep track of user info 
-    pass
+    def __init__(self, name, age, school, health):
+        self.name = name
+        self.age = age
+        self.school = school
+        self.health = health
+        self.followers = []
+        
+    def addFollowers(person):
+        self.followers.append(person)
 
 class Question(object):
-
-    ALPHABET = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s'] #mostly
+    ALPHABET = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w'] #mostly
     
     def __init__(self, question, ansChoices, results):
         assert type(question) == str
@@ -41,6 +54,7 @@ class Question(object):
         while(answerInvalid):
             userAnswer = raw_input(self.question)
             userAnswer = userAnswer.lower()
+            
             if (userAnswer in self.letterChoices): #what conditions that make userAnswer valid
                 answerInvalid = False
         chosenResult = self.results[self.letterChoices.index(userAnswer)]
